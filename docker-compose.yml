@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  phone-crawl:
+    image: registry.cn-beijing.aliyuncs.com/tianli-spider/phone-crawl
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    command: python3 sougou.py
